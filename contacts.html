@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Title</title>
+    <title>Contacts</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
@@ -11,16 +11,66 @@
 
     <a href="index.html"><img src="images/coronaviruslogo.jpeg" height="50" alt="logo"></a>
 
-<main class="contactcolor">
-    <h1>Contacts</h1>
+    <main>
 
-    <p>If you have had or think you have had close contact with anyone who has been confirmed with the Coronavirus, or have any of the symptoms listed on the <a href="features.html">Features link</a>, please contact your local or state health depatment. </p>
-    <p>It is recommended to stay home and have medical oficials come to your home to evaluate you. This prevents the possible contamination of the virus to anyone else outside of your home. If hospitalized medical care is not needed, please do not go to the hospital.</p>
+        <form action="results.html">
+            <p>
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname">
+            </p>
 
-    <ul>
-        <li>(WHO) World Health Organization contact: 1-(202)-974-3000 </li>
-        <li>(CDC) Centers for Disease Control and Prevention contact: 1-800-232-4636</li>
+            <p>
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" id="lastname">
+            </p>
 
-    </ul>
-<main/>
-    
+
+            <p>
+                <label for="emailaddress">Email Address:</label>
+                <input type="text" name="emailaddress" id="emailaddress">
+            </p>
+            <P>
+                
+                <select name="how you heard" id="how-you-heard" multiple>
+
+                    <option value="email">Email address</option>
+                    <option value="ad">Advertisement</option>
+                    <option value="friend">Friend</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="web">Web</option>
+                    <option value="search">Search</option>
+
+                </select>
+
+            </P>
+            <p>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="4" cols="10"></textarea>
+
+            </p>
+
+            <p>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </p>
+
+
+
+        </form>
+
+
+
+    </main>
+
+
+
+        <h1>Contacts</h1>
+
+        <p>If you have had or think you have had close contact with anyone who has been confirmed with the Coronavirus, or have any of the symptoms listed on the <a href="features.html">Features link</a>, please contact your local or state health depatment. </p>
+        <p>It is recommended to stay home and have medical oficials come to your home to evaluate you. This prevents the possible contamination of the virus to anyone else outside of your home. If hospitalized medical care is not needed, please do not go to the hospital.</p>
+
+        <ul>
+            <li>(WHO) World Health Organization contact: 1-(202)-974-3000 </li>
+            <li>(CDC) Centers for Disease Control and Prevention contact: 1-800-232-4636</li>
+
+        </ul>
